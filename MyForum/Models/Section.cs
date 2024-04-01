@@ -13,7 +13,7 @@ namespace MyForum.Models
 		public bool IsHidden { get; set; } = false;
 
 		public List<ThemeSection> Themes { get; set; }
-		public Category Category { get; set; }
+		public Category? Category { get; set; }
 
 		public Section()
 		{

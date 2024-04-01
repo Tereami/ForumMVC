@@ -15,6 +15,6 @@ namespace MyForum.Models
 		public string Text { get; set; }
 		public bool IsChecked { get; set; } = false;
 		public DateTime SendingTime { get; set; }
-		public User Sender { get; set; }
+		public User? Sender { get; set; }
 	}
 }

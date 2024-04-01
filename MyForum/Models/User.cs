@@ -8,8 +8,8 @@ namespace MyForum.Models
 {
 	public class User : IdentityUser<Guid>
 	{
-		public string Status { get; set; }
-		public DateTime RegistrationDate { get; set; }
+		public string Status { get; set; } = "no status";
+		public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
 		public bool IsSilenced { get; set; } = false;
 		public DateTime? SilenceStartTime { get; set; } = null;

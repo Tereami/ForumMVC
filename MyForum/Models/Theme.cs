@@ -9,9 +9,9 @@ namespace MyForum.Models
 	public class Theme
 	{
 		public Guid Id { get; set; }
-		public string Title { get; set; }
-		public string Description { get; set; }
-		public DateTime CreatingTime { get; set; }
+		public string Title { get; set; } = "No title";
+		public string Description { get; set; } = "No description";
+		public DateTime CreatingTime { get; set; } = DateTime.Now;
 		public bool IsClosed { get; set; } = false;
 		public bool IsHidden { get; set; } = false;
 
